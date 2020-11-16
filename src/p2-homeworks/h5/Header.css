@@ -14,6 +14,9 @@
     z-index: 2;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+    line-height: 25px;
+
+    padding-top: 50px;
 }
 
 .hidden-menu-ticker {
@@ -63,4 +66,15 @@
 .hidden-menu-ticker:checked ~ .btn-menu span.third {
     -webkit-transform: rotate(-45deg);
     top: -8px;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+/*//цвет активной ссылки */
+.item a.activeClassLink {
+    color: darkgray;
+
 }

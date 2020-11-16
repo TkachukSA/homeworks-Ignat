@@ -1,26 +1,31 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+
 import "./Header.css"
 import {PATH} from "./Routes";
+import {NavLink} from "react-router-dom";
 
 function Header() {
+
     return (
         <div>
 
-            <input type="checkbox" id="hmt" className="hidden-menu-ticker" onMouseOver={event => event.currentTarget}/>
+            <input type="checkbox" id="hmt" className="hidden-menu-ticker"/>
 
             <label className="btn-menu" htmlFor="hmt">
 
             </label>
 
             <ul className="hidden-menu">
-
-                <li><NavLink to={"/pre-junior"}>Main Page</NavLink></li>
-                <li> <NavLink to={"/Juniorplus"}>xxx</NavLink></li>
-
-
-                <li><NavLink to={"/Testspage"}>Testspage</NavLink></li>
-                <li><NavLink to={"/Junior"}>junior</NavLink></li>
+                <div className="item">
+                    <li><NavLink to={"/pre-junior"} activeClassName="activeClassLink">Main Page</NavLink></li>
+                    <li><NavLink to={PATH.HW1} activeClassName="activeClassLink">Homeworks 1</NavLink></li>
+                    <li><NavLink to={PATH.HW2} activeClassName="activeClassLink">Homeworks 2</NavLink></li>
+                    <li><NavLink to={PATH.HW3} activeClassName="activeClassLink">Homeworks 3</NavLink></li>
+                    <li><NavLink to={PATH.HW4} activeClassName="activeClassLink">Homeworks 4</NavLink></li>
+                    <li><NavLink to={"/Juniorplus"} activeClassName="activeClassLink">Juniorplus</NavLink></li>
+                    <li><NavLink to={"/Testspage"} activeClassName="activeClassLink">Testspage</NavLink></li>
+                    <li><NavLink to={PATH.Junior} activeClassName="activeClassLink">Junior</NavLink></li>
+                </div>
             </ul>
 
 

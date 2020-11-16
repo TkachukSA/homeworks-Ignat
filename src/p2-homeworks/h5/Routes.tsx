@@ -6,12 +6,21 @@ import Testspage from "./pages/Testspage";
 import HW1 from "../h1/HW1";
 import Junior from "./pages/Junior";
 import Juniorplus from "./pages/Juniorplus";
+import HW2 from "../h2/HW2";
+import HW4 from "../h4/HW4";
+import HW3 from "../h3/HW3";
+
 
 export const PATH = {
     PRE_JUNIOR: "/pre-junior",
     Testspage: "/testspage",
-    Junior: "./junior/j",
-    Juniorplus: "./Juniorplus"
+    Junior: "/junior/j",
+    Juniorplus: "/Juniorplus",
+    HW1: '/HW1',
+    HW2: '/HW2',
+    HW3: '/HW3',
+    HW4: '/HW4'
+
     // add paths
 }
 
@@ -26,9 +35,14 @@ function Routes() {
             <Route path={"/"} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
 
             <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
-            <Route path={PATH["Junior"]} render={() => <Junior/>}/>
+            <Route path={PATH.HW1} render={() => <HW1/>}/>
+            <Route path={PATH.HW2} render={() => <HW2/>}/>
+            <Route path={PATH.HW3} render={() => <HW3/>}/>
+            <Route path={PATH.HW4} render={() => <HW4/>}/>
+            <Route path={PATH.Junior} render={() => <Junior/>}/>
             <Route path={PATH.Testspage} render={() => <Testspage/>}/>
             <Route path={PATH.Juniorplus} render={() => <Juniorplus/>}/>
+
 
                 // add routes
 
