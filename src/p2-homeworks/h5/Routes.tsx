@@ -5,11 +5,13 @@ import Error404 from "./pages/Error404";
 import Testspage from "./pages/Testspage";
 import HW1 from "../h1/HW1";
 import Junior from "./pages/Junior";
+import Juniorplus from "./pages/Juniorplus";
 
 export const PATH = {
     PRE_JUNIOR: "/pre-junior",
     Testspage: "/testspage",
-    Junior: "./junior/j"
+    Junior: "./junior/j",
+    Juniorplus: "./Juniorplus"
     // add paths
 }
 
@@ -26,6 +28,7 @@ function Routes() {
             <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
             <Route path={PATH["Junior"]} render={() => <Junior/>}/>
             <Route path={PATH.Testspage} render={() => <Testspage/>}/>
+            <Route path={PATH.Juniorplus} render={() => <Juniorplus/>}/>
 
                 // add routes
 

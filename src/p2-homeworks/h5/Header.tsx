@@ -16,6 +16,7 @@ function Header() {
             <ul className="hidden-menu">
 
                 <li><NavLink to={"/pre-junior"}>Main Page</NavLink></li>
+                <li> <NavLink to={"/Juniorplus"}>xxx</NavLink></li>
 
 
                 <li><NavLink to={"/Testspage"}>Testspage</NavLink></li>
