@@ -17,13 +17,13 @@ function Header() {
 
             <ul className="hidden-menu">
                 <div className="item">
-                    <li><NavLink to={"/pre-junior"} activeClassName="activeClassLink">Main Page</NavLink></li>
+                    <li><NavLink to={PATH.PRE_JUNIOR} activeClassName="activeClassLink">Main Page</NavLink></li>
                     <li><NavLink to={PATH.HW1} activeClassName="activeClassLink">Homeworks 1</NavLink></li>
                     <li><NavLink to={PATH.HW2} activeClassName="activeClassLink">Homeworks 2</NavLink></li>
                     <li><NavLink to={PATH.HW3} activeClassName="activeClassLink">Homeworks 3</NavLink></li>
                     <li><NavLink to={PATH.HW4} activeClassName="activeClassLink">Homeworks 4</NavLink></li>
-                    <li><NavLink to={"/Juniorplus"} activeClassName="activeClassLink">Juniorplus</NavLink></li>
-                    <li><NavLink to={"/Testspage"} activeClassName="activeClassLink">Testspage</NavLink></li>
+                    <li><NavLink to={PATH.Juniorplus} activeClassName="activeClassLink">Juniorplus</NavLink></li>
+                    <li><NavLink to={PATH.Testspage} activeClassName="activeClassLink">Testspage</NavLink></li>
                     <li><NavLink to={PATH.Junior} activeClassName="activeClassLink">Junior</NavLink></li>
                 </div>
             </ul>
