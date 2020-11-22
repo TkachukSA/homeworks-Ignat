@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import SuperEditableSpan from "./common/c4-SuperEditableSpan/SuperEditableSpan";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import {restoreState, saveState} from "./localStorage/localStorage";
+import s from "./HW6.module.css"
 
 function HW6() {
     const [value, setValue] = useState<string>("");
@@ -21,11 +22,11 @@ function HW6() {
             homeworks 6
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={s.borromhw6}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : "enter text..."}}
+                    spanProps={{children: value ? undefined : <span onFocus={(e)=>alert('hi')} placeholder='asa'>"Enter your text..."</span>}}
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>

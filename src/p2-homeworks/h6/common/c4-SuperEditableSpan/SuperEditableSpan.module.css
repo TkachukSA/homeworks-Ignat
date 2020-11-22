@@ -1,0 +1,7 @@
+.spanx{
+    background-color: red;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    display: inline-block
+}
