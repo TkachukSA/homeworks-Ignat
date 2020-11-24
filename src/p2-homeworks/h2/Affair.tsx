@@ -19,15 +19,15 @@ function Affair(props: AffairPropsType) {
 
 
 
-            <tr><td>{props.affair._id}</td><td>{props.affair.name}</td><td>{props.affair.priority}</td><button
-                onClick={()=> deleteCallback(props.affair._id)}>X</button> </tr>
+                <tr><td>{props.affair._id}</td><td>{props.affair.name}</td><td>{props.affair.priority}</td><button
+                    onClick={()=> deleteCallback(props.affair._id)}>X</button> </tr>
 
 
-        </table>
+            </table>
 
-      {/*     <div><span>{props.affair._id}</span> <span>{props.affair.name}</span> <span>{props.affair.priority}</span>*/}
+            {/*     <div><span>{props.affair._id}</span> <span>{props.affair.name}</span> <span>{props.affair.priority}</span>*/}
 
-{/*<button onClick={()=> deleteCallback(props.affair._id)}>X</button></div>*/}
+            {/*<button onClick={()=> deleteCallback(props.affair._id)}>X</button></div>*/}
         </div>
     );
 }

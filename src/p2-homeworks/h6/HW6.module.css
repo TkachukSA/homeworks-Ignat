@@ -1,4 +1,13 @@
 .borromhw6{
+
+    margin-left: 20px;
+    text-align: center;
+}
+
+.window{
     display: flex;
-    margin: 20px 0;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }

@@ -22,20 +22,18 @@ function HW6() {
             homeworks 6
 
             {/*should work (должно работать)*/}
-            <div className={s.borromhw6}>
+            <div className={s.window}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : <span onFocus={(e)=>alert('hi')} placeholder='asa'>"Enter your text..."</span>}}
+                    spanProps={{children: value ? undefined : "enter text..."}}
                 />
-            </div>
+            </div >
+            <div className={s.borromhw6}>
             <SuperButton onClick={save}>save</SuperButton>
             <SuperButton onClick={restore}>restore</SuperButton>
+            </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
-            <hr/>
         </div>
     );
 }

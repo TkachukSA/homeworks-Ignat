@@ -10,7 +10,7 @@ type AffairsPropsType = { // need to fix any
 }
 
 function Affairs(props: AffairsPropsType) {
-debugger
+    debugger
     const setAll = () => {props.setFilter('all')};
     const setHigh = () => {props.setFilter('high')};
     const setMiddle = () => {props.setFilter('middle')};
@@ -21,10 +21,10 @@ debugger
 
             <div>
                 {props.data.map((a: AffairType) => (
-                <Affair // should work
-                    key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-                    affair={a}
-                    deleteAffairCallback={props.deleteAffairCallback}/>))}
+                    <Affair // should work
+                        key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+                        affair={a}
+                        deleteAffairCallback={props.deleteAffairCallback}/>))}
             </div>
 
             <button onClick={setAll}>All</button>

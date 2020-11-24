@@ -47,9 +47,8 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
         onDoubleClick && onDoubleClick(e);
     };
 
-   // const spanClassName = `${s.spanx} ${className}`;
-    const spanClassName = editMode? className: `${s.errorInput}`;
-    //error ? `${s.errorInput}` : s.superInput;
+    const spanClassName = `${s.spanx} ${className}`;
+
 
     return (
         <>
@@ -59,6 +58,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         autoFocus // пропсу с булевым значением не обязательно указывать true
                         onBlur={onBlurCallback}
                         onEnter={onEnterCallback}
+
 
                         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
                     />

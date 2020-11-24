@@ -33,10 +33,10 @@ function HW3() {
             <GreetingContainer users={users}
                                addUserCallback={addUserCallback}/>
 
-            <hr/>
+
             {users.map(user => <div className={userclass}>{user.name}</div>)}
 
-            <hr/>
+
         </div>
     );
 }
