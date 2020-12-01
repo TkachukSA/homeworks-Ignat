@@ -7,7 +7,6 @@ import HW1 from "../../../p2-homeworks/h1/HW1";
 import HW2 from "../../../p2-homeworks/h2/HW2";
 import HW5 from "../../../p2-homeworks/h5/HW5";
 import HW6 from "../../../p2-homeworks/h6/HW6";
-import HW7 from "../../../p2-homeworks/h7/HW7";
 
 function App() {
 
@@ -18,7 +17,7 @@ function App() {
             <HW2/>
             <HW3/>
             <HW4/>*/}
-            <HW7/>
+            <HW5/>
             {
 
             }
