@@ -12,13 +12,17 @@ beforeEach(() => {
         {_id: 4, name: "Дмитрий", age: 40},
         {_id: 5, name: "Ирина", age: 55},
     ]
+
 });
 
 test("sort name up", () => {
-    const newState = homeWorkReducer(initialState, {type: "sort", payload: "up"});
+    const action = {type: "sort", payload: "up"}
+    const newState = homeWorkReducer(initialState, action);
 
     console.log(newState);
     // expect(...).toBe(...);
+    expect(newState[0].name).toBe("Александр")
+    expect(newState[1].name).toBe("Виктор")
 });
 test("sort name down", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});

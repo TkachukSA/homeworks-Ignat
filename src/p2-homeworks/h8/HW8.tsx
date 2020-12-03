@@ -2,7 +2,14 @@ import React, {useState} from "react";
 import {homeWorkReducer} from "./bll/homeWorkReducer";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
-const initialPeople = [
+
+export type initialPeopleType={
+    _id: number
+    name: string
+    age: number
+}
+
+const initialPeople:initialPeopleType[] = [
     {_id: 0, name: "Кот", age: 3},
     {_id: 1, name: "Александр", age: 66},
     {_id: 2, name: "Коля", age: 16},
@@ -13,14 +20,20 @@ const initialPeople = [
 
 function HW8() {
     const [people, setPeople] = useState(initialPeople);
-
+    //some name, age
     const finalPeople = people.map(p => (
         <div key={p._id}>
-            some name, age
+            <li>
+                {p.name} {p.age}
+            </li>
+         {/*   <div>{p.name}</div><div>{p.age}</div>*/}
+
         </div>
     ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "up"}))
+    const sortdown = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "down"}))
+    const sort18 = () => setPeople(homeWorkReducer(initialPeople, {type: "check", payload: 18}))
 
     return (
         <div>
@@ -31,6 +44,8 @@ function HW8() {
 
             {finalPeople}
             <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+            <div><SuperButton onClick={sortdown}>sort down</SuperButton></div>
+            <div><SuperButton onClick={sort18}>sort 18+</SuperButton></div>
             <div>sort down</div>
 
             check 18
