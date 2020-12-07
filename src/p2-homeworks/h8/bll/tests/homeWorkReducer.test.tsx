@@ -1,5 +1,5 @@
 import React from 'react';
-import {homeWorkReducer} from "../homeWorkReducer";
+import {homeWorkReducer, sortName18plusActionType, sortNameUpActionType} from "../homeWorkReducer";
 
 let initialState: any[];
 
@@ -16,21 +16,40 @@ beforeEach(() => {
 });
 
 test("sort name up", () => {
-    const action = {type: "sort", payload: "up"}
+    const action:sortNameUpActionType = {
+        type: "sort",
+        payload: "up"
+    }
     const newState = homeWorkReducer(initialState, action);
 
     console.log(newState);
-    // expect(...).toBe(...);
     expect(newState[0].name).toBe("Александр")
     expect(newState[1].name).toBe("Виктор")
 });
+
+
+
+
+
 test("sort name down", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});
+
+    expect(newState[0].name).toBe('Кот')
+    expect(newState[1].name).toBe('Коля')
 
 
 });
 test("check age 18", () => {
-    const newState = homeWorkReducer(initialState, {type: "check", payload: 18});
+
+
+    const action: sortName18plusActionType ={
+        type: "check",
+        payload: 18
+    }
+    const newState = homeWorkReducer(initialState, action);
+    expect(newState.length).toBe(4)
+    expect(newState[0].name).not.toBe("Кот")
+
 
 
 });

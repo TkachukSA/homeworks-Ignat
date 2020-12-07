@@ -2,25 +2,56 @@ import {initialPeopleType} from "../HW8";
 
 export type sortNameUpActionType ={
     type: "sort"
-    namr: string
-    id: number
+    payload: "up" | "down"
+}
+/*export type sortNameDownActionType ={
+    type: "sort"
+    payload: "down"
+}*/
+export type sortName18plusActionType ={
+    type: "check"
+    payload: 18
 }
 
 
-export type ActionsType = sortNameUpActionType
+export type ActionsType = sortNameUpActionType | sortName18plusActionType
 
-export const homeWorkReducer = (state: initialPeopleType[], action: any): any => {
+export const homeWorkReducer = (state: initialPeopleType[], action: ActionsType): initialPeopleType[] => {
     switch (action.type) {
         case "sort": {
-            const newState = {...state}
-            newState
-
-            return state
+            const newState = [...state]
+            if (action.payload === "up") {
+                let resultat = newState.sort(function (a, b) {
+                    if (a.name < b.name) {
+                        return -1;
+                    }
+                    if (a.name > b.name) {
+                        return 1;
+                    }
+                    return 0;
+                })
+                return resultat
+            }
+            if (action.payload === "down") {
+                let resultat = newState.sort(function (a, b) {
+                    if (a.name > b.name) {
+                        return -1;
+                    }
+                    if (a.name < b.name) {
+                        return 1;
+                    }
+                    return 0;
+                })
+                return resultat
+            }
         }
+
+
         case "check": {
-
-            return state
+            const newState = [...state]
+            return newState.filter(t=>t.age>18)
         }
-        default: return state
+        default:
+            return state
     }
 };
