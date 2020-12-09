@@ -1,15 +1,17 @@
 import React, {useState} from "react";
 import {homeWorkReducer} from "./bll/homeWorkReducer";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import s from "./HW8.module.css"
+import {TableCell, TableHead, TableRow} from "@material-ui/core";
 
 
-export type initialPeopleType={
+export type initialPeopleType = {
     _id: number
     name: string
     age: number
 }
 
-const initialPeople:initialPeopleType[] = [
+const initialPeople: initialPeopleType[] = [
     {_id: 0, name: "Кот", age: 3},
     {_id: 1, name: "Александр", age: 66},
     {_id: 2, name: "Коля", age: 16},
@@ -20,13 +22,11 @@ const initialPeople:initialPeopleType[] = [
 
 function HW8() {
     const [people, setPeople] = useState(initialPeople);
-    //some name, age
+
     const finalPeople = people.map(p => (
-        <div key={p._id}>
-            <li>
-                {p.name} {p.age}
-            </li>
-         {/*   <div>{p.name}</div><div>{p.age}</div>*/}
+        <div  className={s.item} key={p._id}>
+
+            <div>{p.name}</div> <div>{p.age}</div>
 
         </div>
     ))
@@ -40,19 +40,20 @@ function HW8() {
             <hr/>
             homeworks 8
 
-            {/*should work (должно работать)*/}
+            <div className={s.finalPeople}>
+                <div className={s.header}>
+                    <div>name</div>
+                    <div>age</div>
+                </div>
+                {finalPeople}
+            </div>
 
-            {finalPeople}
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div><SuperButton onClick={sortdown}>sort down</SuperButton></div>
-            <div><SuperButton onClick={sort18}>sort 18+</SuperButton></div>
-            <div>sort down</div>
 
-            check 18
+            <SuperButton className={s.button} onClick={sortUp}>sort up</SuperButton>
+            <SuperButton className={s.button} onClick={sortdown}>sort down</SuperButton>
+            <SuperButton className={s.button} onClick={sort18}>sort 18+</SuperButton>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
+
             <hr/>
         </div>
     );

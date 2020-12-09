@@ -1,0 +1,26 @@
+.page{
+    justify-content: space-between;
+    display: flex;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px double lightgrey;
+    padding: 0 5px;
+}
+.finalPeople{
+    width: 300px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.button {
+   /*// width: 140px;*/
+    margin: 15px 15px;
+}

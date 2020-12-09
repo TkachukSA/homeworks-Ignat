@@ -10,7 +10,7 @@ type AffairsPropsType = { // need to fix any
 }
 
 function Affairs(props: AffairsPropsType) {
-    debugger
+
     const setAll = () => {props.setFilter('all')};
     const setHigh = () => {props.setFilter('high')};
     const setMiddle = () => {props.setFilter('middle')};
