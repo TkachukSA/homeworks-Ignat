@@ -15,9 +15,6 @@ function Clock() {
         const id: number = window.setInterval(() => {
            setDate(new Date())
 
-            /*new Date().toLocaleString()  .toLocaleTimeString() */
-
-            // setDate
         }, 1000);
         setTimerId(id);
         setShow(true)
