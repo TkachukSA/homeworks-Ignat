@@ -1,0 +1,12 @@
+.item{font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.date{
+    color: rgba(255, 255, 255, 0.14);
+    font-size: 20px;
+    text-align: center;
+}
+.click{
+    text-align: center;
+}
