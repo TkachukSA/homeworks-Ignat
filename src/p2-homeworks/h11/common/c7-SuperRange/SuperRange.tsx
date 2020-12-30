@@ -22,21 +22,23 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         onChange && onChange(e); // сохраняем старую функциональность
 
+
         onChangeRange && onChangeRange(+e.currentTarget.value);
     }
 
     const finalRangeClassName = `${s.range} ${className ? className : ""}`;
 
     return (
-        <>
+        <div className={s.range}>
             <input
+
                 type={"range"}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
 
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
-        </>
+        </div>
     );
 }
 

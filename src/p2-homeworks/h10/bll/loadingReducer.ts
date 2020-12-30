@@ -4,7 +4,6 @@ export type LoadingReducerType =  boolean
 
 
 export const loadingReducer = (state:LoadingReducerType = initState, action: loadingACType): LoadingReducerType => { // fix any
-    debugger
     switch (action.type) {
         case "LOADING": {
             let statecopy = state
