@@ -21,3 +21,11 @@
 .some-text {
     color: darkslateblue;
 }
+
+.purple {
+    background: #ce2cfc;
+}
+.item {
+    text-align: center;
+    display: block;
+}
