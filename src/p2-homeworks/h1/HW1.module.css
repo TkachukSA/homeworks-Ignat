@@ -1,0 +1,28 @@
+.hw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh
+}
+.container{
+    margin-left: 270px;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
+    color: white;
+   /* background-color: rgba(45, 45, 45, 0.82);*/
+}
+
+.item {
+  /*  background-color: yellowgreen ;*/
+
+}
+
+.item img {
+    box-shadow: 0 0 0 3px green, 0 0 13px #333;
+    border-radius: 300px;
+    width: 150px;
+    height: 150px;
+}

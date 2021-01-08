@@ -1,3 +1,4 @@
+/*
 .someClass {
     display: flex;
     flex-direction: column;
@@ -50,4 +51,31 @@ button {
     background-image: linear-gradient(to bottom, #efefef, #777);
     -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.2);
+}*/
+
+
+.finalPeople{
+    width: 300px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
+    color: white;
+    background-color: rgb(34 35 36);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

@@ -2,3 +2,12 @@
     text-align: center;
 
 }
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+    height: 50vh;
+    color: white;
+    background-color: rgb(34 35 36);
+}

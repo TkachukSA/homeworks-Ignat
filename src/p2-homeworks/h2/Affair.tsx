@@ -1,6 +1,8 @@
 import React from "react";
 import {AffairType} from "./HW2";
 import "./Affairs.module.css"
+import s from "../h8/HW8.module.css";
+
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType
@@ -13,22 +15,28 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(id)
     }
 
+
     return (
-        <div className="someClass">
-            <table cellSpacing="2">
 
 
+        <div >
+           {/* <span>name</span>
+            <span>priority</span>*/}
 
-                <tr><td>{props.affair._id}</td><td>{props.affair.name}</td><td>{props.affair.priority}</td><button
-                    onClick={()=> deleteCallback(props.affair._id)}>X</button> </tr>
+
+            <div className={s.finalPeople}>
+                <div className={s.header}>
+                    <span>{props.affair.priority}</span>
+                    {props.affair.name}
+                    <span><button  onClick={()=> deleteCallback(props.affair._id)}>X</button></span>
+
+                </div>
+
+            </div>
 
 
-            </table>
-
-            {/*     <div><span>{props.affair._id}</span> <span>{props.affair.name}</span> <span>{props.affair.priority}</span>*/}
-
-            {/*<button onClick={()=> deleteCallback(props.affair._id)}>X</button></div>*/}
         </div>
+
     );
 }
 

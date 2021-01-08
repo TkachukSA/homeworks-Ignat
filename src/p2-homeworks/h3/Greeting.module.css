@@ -67,8 +67,19 @@
     background-color: honeydew;
     width: 230px;
     border: 1px solid black;
+    color: black;
 }
 .cc{
 
     text-align: center;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    color: white;
+    background-color: #353535
 }

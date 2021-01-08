@@ -23,9 +23,9 @@ function HW10() {
     };
 
     return (
-        <div>
+        <div className={s.cont}>
 
-            homeworks 10
+            <h2 className={s.header}>homeworks 10</h2>
 
             {/*should work (должно работать)*/}
             {loading
@@ -38,10 +38,8 @@ function HW10() {
                 )
             }
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
+
+
         </div>
     );
 }

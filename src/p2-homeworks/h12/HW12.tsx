@@ -8,12 +8,12 @@ import {changeThemeC, changeThemeCAC, themeReducerType} from "./bll/themeReducer
 const themes = ['dark', 'red', 'some', 'purple'];
 
 function HW12() {
-    const theme =useSelector<AppStoreType, themeReducerType>(state => state.theme )
+    const theme = useSelector<AppStoreType, themeReducerType>(state => state.theme)
     let dispatch = useDispatch()
     ; // useSelector
 
 
-    const onChangeOption=(color: string)=>{
+    const onChangeOption = (color: string) => {
         dispatch(changeThemeC(color))
     }
 
@@ -21,28 +21,35 @@ function HW12() {
 
 
     return (
+        <div className={s.container}>
 
-        <div className={s[theme.color] }>
+            <div className={s[theme.color]}>
 
 
             <span className={s[theme + '-text']}>
                 <div className={s.item}>
-                homeworks 12
+                <h2>homeworks 12</h2>
+                    <p>
+                      click to select background</p>
                     </div>
             </span>
 
-            {/*should work (должно работать)*/}
-            {/*SuperSelect or SuperRadio*/}
-            <SuperRadio
+                {/*should work (должно работать)*/}
+                {/*SuperSelect or SuperRadio*/}
+                <SuperRadio
 
-            name={"radio"}
-            options={themes}
-            value={theme.color}
-            onChangeOption={onChangeOption}
-            />
+                    name={"radio"}
+                    options={themes}
+                    value={theme.color}
+                    onChangeOption={onChangeOption}
+                />
 
-            <hr/>
+
+            </div>
+
         </div>
+
+
     );
 }
 

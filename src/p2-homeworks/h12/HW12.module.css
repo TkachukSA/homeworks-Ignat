@@ -1,5 +1,7 @@
 .dark {
     background: dimgrey;
+    height: 100%;
+    text-align: center;
 }
 
 .dark-text {
@@ -8,6 +10,8 @@
 
 .red {
     background: lightcoral;
+    height: 100%;
+    text-align: center;
 }
 
 .red-text {
@@ -16,6 +20,8 @@
 
 .some {
     background: lightgreen;
+    height: 100%;
+    text-align: center;
 }
 
 .some-text {
@@ -24,8 +30,18 @@
 
 .purple {
     background: #ce2cfc;
+    height: 100%;
+    text-align: center;
 }
 .item {
+
     text-align: center;
     display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
 }

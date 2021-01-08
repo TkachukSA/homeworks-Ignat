@@ -1,4 +1,5 @@
 .range {
-    display: grid;
+    min-width: 100%;
+    display: flex;
 
 }

@@ -1,12 +1,9 @@
 .superInput {
-color: black;
-    background-color: red;
+    color: black;
+   /* border: 2px solid red*/;
+  /*  background-color: red;*/
     width: 300px;
-
     position: relative;
-
-
-
     height: 20px;
     max-width: 280px;
     border-radius: 5px;
@@ -15,23 +12,21 @@ color: black;
 
 .errorInput {
     position: relative;
-background-color: #672323;
+    border: 2px solid red;
     color: #efefef;
     width: 150%;
     height: 20px;
     max-width: 280px;
     border-radius: 3px;
-    overflow: hidden
+   /* overflow: hidden*/
 
 
 }
 
 .error {
     display: block;
-    width:80px;
-
+    width: 80px;
     vertical-align: top;
-
     font-family: inherit;
     font-size: 15px;
     color: #111;

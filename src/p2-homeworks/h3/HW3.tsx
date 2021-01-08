@@ -25,9 +25,9 @@ function HW3() {
 
 
     return (
-        <div>
-            <hr/>
-            homeworks 3
+        <div className={s.container}>
+
+            <h2>homeworks 3</h2>
 
 
             <GreetingContainer users={users}

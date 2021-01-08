@@ -22,6 +22,13 @@ function Header() {
                     <li><NavLink to={PATH.HW2} activeClassName="activeClassLink">Homeworks 2</NavLink></li>
                     <li><NavLink to={PATH.HW3} activeClassName="activeClassLink">Homeworks 3</NavLink></li>
                     <li><NavLink to={PATH.HW4} activeClassName="activeClassLink">Homeworks 4</NavLink></li>
+                    <li><NavLink to={PATH.HW6} activeClassName="activeClassLink">Homeworks 6</NavLink></li>
+                    <li><NavLink to={PATH.HW7} activeClassName="activeClassLink">Homeworks 7</NavLink></li>
+                    <li><NavLink to={PATH.HW8} activeClassName="activeClassLink">Homeworks 8</NavLink></li>
+                    <li><NavLink to={PATH.HW9} activeClassName="activeClassLink">Homeworks 9</NavLink></li>
+                    <li><NavLink to={PATH.HW10} activeClassName="activeClassLink">Homeworks 10</NavLink></li>
+                    <li><NavLink to={PATH.HW11} activeClassName="activeClassLink">Homeworks 11</NavLink></li>
+                    <li><NavLink to={PATH.HW12} activeClassName="activeClassLink">Homeworks 12</NavLink></li>
                     <li><NavLink to={PATH.Juniorplus} activeClassName="activeClassLink">Juniorplus</NavLink></li>
                     <li><NavLink to={PATH.Testspage} activeClassName="activeClassLink">Testspage</NavLink></li>
                     <li><NavLink to={PATH.Junior} activeClassName="activeClassLink">Junior</NavLink></li>

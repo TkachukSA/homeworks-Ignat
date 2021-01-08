@@ -19,9 +19,9 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
 
     return (
-        <div>
-            <hr/>
-            homeworks 4
+        <div className={s.container}>
+
+            <h2>homeworks 4 </h2>
 
             <div className={s.column}>
                 {/*should work (должно работать)*/}

@@ -27,10 +27,14 @@ function Affairs(props: AffairsPropsType) {
                         deleteAffairCallback={props.deleteAffairCallback}/>))}
             </div>
 
+
+
+            <span className={s.button}>
             <button onClick={setAll}>All</button>
             <button onClick={setHigh}>High</button>
             <button onClick={setMiddle}>Middle</button>
             <button onClick={setLow}>Low</button>
+                </span>
         </div>
     );
 }

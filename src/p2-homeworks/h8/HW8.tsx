@@ -24,9 +24,10 @@ function HW8() {
     const [people, setPeople] = useState(initialPeople);
 
     const finalPeople = people.map(p => (
-        <div  className={s.item} key={p._id}>
+        <div className={s.item} key={p._id}>
 
-            <div>{p.name}</div> <div>{p.age}</div>
+            <div>{p.name}</div>
+            <div>{p.age}</div>
 
         </div>
     ))
@@ -36,9 +37,9 @@ function HW8() {
     const sort18 = () => setPeople(homeWorkReducer(initialPeople, {type: "check", payload: 18}))
 
     return (
-        <div>
-            <hr/>
-            homeworks 8
+        <div className={s.container}>
+
+            <h2>homeworks 8</h2>
 
             <div className={s.finalPeople}>
                 <div className={s.header}>
@@ -48,13 +49,13 @@ function HW8() {
                 {finalPeople}
             </div>
 
+            <div className={s.buttonContainer}>
+                <SuperButton className={s.button} onClick={sortUp}>sort up</SuperButton>
+                <SuperButton className={s.button} onClick={sortdown}>sort down</SuperButton>
+                <SuperButton className={s.button} onClick={sort18}>sort 18+</SuperButton>
+            </div>
 
-            <SuperButton className={s.button} onClick={sortUp}>sort up</SuperButton>
-            <SuperButton className={s.button} onClick={sortdown}>sort down</SuperButton>
-            <SuperButton className={s.button} onClick={sort18}>sort 18+</SuperButton>
 
-
-            <hr/>
         </div>
     );
 }
