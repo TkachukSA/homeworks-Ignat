@@ -11,7 +11,7 @@
     height: 100px;
 }*/
 
-body{background-color: rgba(45, 45, 45, 0.82);}
+body{background-color: #222425ed;}
 
 
 .balloon{
@@ -23,7 +23,7 @@ body{background-color: rgba(45, 45, 45, 0.82);}
     width: 200px;
     height: 60px;
     color: white;
-    background-color: rgb(34 35 36);
+    background-color: #222425ed;
 
     padding: 10px;
     border-radius: 6px;
