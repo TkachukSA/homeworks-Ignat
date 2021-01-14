@@ -7,7 +7,6 @@ function Juniorplus() {
     return (
         <div>
             <HW13/>
-
         </div>
     );
 }

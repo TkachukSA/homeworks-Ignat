@@ -20,7 +20,7 @@ function App() {
         <div className={s.App}>
             <div>react homeworks:</div>
 
-            <HW13/>
+            <HW5/>
 
 
         </div>

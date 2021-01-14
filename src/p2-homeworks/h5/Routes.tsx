@@ -49,6 +49,7 @@ function Routes() {
                 <Route path={"/"} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
 
                 <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
+                <Route path={PATH.Juniorplus} render={() => <Juniorplus/>}/>
                 <Route path={PATH.HW1} render={() => <HW1/>}/>
                 <Route path={PATH.HW2} render={() => <HW2/>}/>
                 <Route path={PATH.HW3} render={() => <HW3/>}/>
@@ -62,7 +63,7 @@ function Routes() {
                 <Route path={PATH.HW12} render={() => <HW12/>}/>
                 <Route path={PATH.Junior} render={() => <Junior/>}/>
                 <Route path={PATH.Testspage} render={() => <Testspage/>}/>
-                <Route path={PATH.Juniorplus} render={() => <Juniorplus/>}/>
+
 
 
                 // add routes
