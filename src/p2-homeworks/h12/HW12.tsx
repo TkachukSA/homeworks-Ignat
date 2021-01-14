@@ -37,7 +37,6 @@ function HW12() {
                 {/*should work (должно работать)*/}
                 {/*SuperSelect or SuperRadio*/}
                 <SuperRadio
-
                     name={"radio"}
                     options={themes}
                     value={theme.color}

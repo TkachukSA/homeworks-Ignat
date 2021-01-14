@@ -1,10 +1,12 @@
 import React from "react";
+import HW13 from "../../h13/h13";
+
 
 
 function Juniorplus() {
     return (
         <div>
-            HELLO MAN
+            <HW13/>
 
         </div>
     );

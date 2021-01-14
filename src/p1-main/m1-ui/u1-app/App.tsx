@@ -12,6 +12,7 @@ import HW9 from "../../../p2-homeworks/h9/HW9";
 import HW10 from "../../../p2-homeworks/h10/HW10";
 import HW11 from "../../../p2-homeworks/h11/HW11";
 import HW12 from "../../../p2-homeworks/h12/HW12";
+import HW13 from "../../../p2-homeworks/h13/h13";
 
 function App() {
 
@@ -19,10 +20,8 @@ function App() {
         <div className={s.App}>
             <div>react homeworks:</div>
 
-            <HW5/>
-            {
+            <HW13/>
 
-            }
 
         </div>
     );
